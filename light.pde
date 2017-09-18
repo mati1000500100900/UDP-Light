@@ -1,7 +1,7 @@
 import hypermedia.net.*;
 
 UDP udp;  // define the UDP object
-String dane="dupa";
+String dane="";
 int time = millis();
 boolean switch1=false;
 boolean switch2=false;
@@ -36,7 +36,7 @@ void draw() {
 }
 
 void send(String x) {
-  String ip       = "192.168.0.88"; // the remote IP address
+  String ip       = "192.168.0.2"; // the remote IP address
   int port        = 11111;        // the destination port
   udp.send(x, ip, port );   // the message to send
 }
